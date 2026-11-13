@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="calc" aria-label="Calculator">
+  <div class="screen" role="status" aria-live="polite">
+    <div class="expr" id="expr"></div>
+    <div class="cur" id="cur">0</div>
+  </div>
+  <div class="keys" id="keys">
+    <button class="fn" data-k="C">C</button>
+    <button class="fn" data-k="back" aria-label="Backspace">⌫</button>
+    <button class="fn" data-k="%">%</button>
+    <button class="op" data-k="/" aria-label="Divide">÷</button>
+    <button data-k="7">7</button><button data-k="8">8</button><button data-k="9">9</button>
+    <button class="op" data-k="*" aria-label="Multiply">×</button>
+    <button data-k="4">4</button><button data-k="5">5</button><button data-k="6">6</button>
+    <button class="op" data-k="-" aria-label="Subtract">−</button>
+    <button data-k="1">1</button><button data-k="2">2</button><button data-k="3">3</button>
+    <button class="op" data-k="+" aria-label="Add">+</button>
+    <button class="zero" data-k="0">0</button>
+    <button data-k=".">.</button>
+    <button class="eq" data-k="=">=</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
